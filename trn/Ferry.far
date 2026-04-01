@@ -1,0 +1,40 @@
+;Added from FerryUpdate.far
+
+; other short hops
+14600   14601   105 ;   Ferry Building to   Fisherman's Wharf
+14503   14608   105 ;   Sausalito to    Tiburon
+
+; Golden Gate Ferry
+14502   14600   484 ;   Larkspur to Ferry Building
+14503   14600   423 ;   Sausalito to    Ferry Building
+14503   14601   423 ;   Sausalito to    Fisherman's Wharf
+14608   14600   423 ;   Tiburon to  Ferry Building
+14608   14601   423 ;   Tiburon to  Fisherman's Wharf
+
+; Oakland & Alameda, Alameda Seaplane, Harbor Bay and Richmond
+; $4.70 in 2023
+14577   14600   250 ;   Richmond to Ferry Building
+14604   14601   250 ;   Alameda to  Fisherman's Wharf
+14604   14600   250 ;   Alameda to  Ferry Building
+14605   14601   250 ;   Oakland to  Fisherman's Wharf
+14605   14600   250 ;   Oakland to  Ferry Building
+14612   14600   250 ;   Harbor Bay to   Ferry Building
+
+; South San Francisco: $7.20 in 2023
+14567   14600   383 ;   South San Francisco to  Ferry Building
+14567   14612   383 ;   South San Francisco to  Harbor Bay
+14567   14605   383 ;   South San Francisco to  Oakland
+14567   14604   383 ;   South San Francisco to  Alameda
+
+; Vallejo: $9.60 in 2023
+14606   14600   511 ;   Vallejo to  Ferry Building
+14606   14601   511 ;   Vallejo to  Fisherman's Wharf
+
+; Short hops: $1 in 2023
+14604   14605   53 ;   Alameda to  Oakland
+;Added from 100_APFB.far
+14609	14600	250	;	Alameda Pt to SF Ferry Building
+
+;Added from TISF.far
+; Treasure Island Ferry fare: $5 in 2023
+14120   14600   266 ;   Treasure Island to  Ferry Building

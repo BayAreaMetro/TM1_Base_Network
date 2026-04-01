@@ -1,0 +1,105 @@
+;Added from farelinks2020.far
+; ******************************** Farelinks.FAR ******************************
+;                                    RTP 2021
+;                             (assumes 2019 fares)
+
+; Hot fix 2025.03 by jennifer z
+; Modes 63 Sonoma and 87 GGT are from the RTP 2021 update
+; All other modes copied from the original base year farelinks.fare
+
+; ******************************** Farelinks.FAR ******************************
+;                                RTP 2017 coding 
+;             (assumes 2016 fares in $ with deflation factor of 0.6773)
+;
+; ************************************************************************
+
+; ------------------------- Modes 24, 80 SamTrans (Add $2 to 292 and 391, $3 to KX)-------------------
+FARELINKS FARE= 203, L=6734- 6732 MODES=80 ONEWAY=N ;Line KX (Add $3.00)
+FARELINKS FARE= 203, L=6733- 6736 MODES=80 ONEWAY=N ;Line KX (Add $3.00)
+FARELINKS FARE= 135, L=6740- 6719 MODES=24 ONEWAY=Y ;Line 292 and 397 out of SF (Add $2.00)
+
+; ------------------------- Modes 31-34 VTA  -----------------------
+; No farelinks coded
+
+; ------------------------- Modes 82  DBX --------------------------
+FARELINKS FARE= 142, L=5922- 5939 MODES=82 ONEWAY=Y ;Line DBEB, DB1EB, DB2EB (add $2.10)
+FARELINKS FARE= 142, L=5938- 5921 MODES=82 ONEWAY=Y ;Line DBWB, DB1WB, DB2WB (add $2.10)
+
+; ------------------------- Modes 37-41 AC TRANSIT -----------------
+FARELINKS FARE= 71, L=2803- 2783 MODES=84 ONEWAY=Y ;TRANSBAY WB -  BAY BRIDGE_Split the fare to links before and after Treasure Island 
+FARELINKS FARE= 71, L=6970- 7016 MODES=84 ONEWAY=Y ;TRANSBAY WB -  BAY BRIDGE_Split the fare to links before and after Treasure Island 
+FARELINKS FARE= 71, L=2784- 2802 MODES=84 ONEWAY=Y ;TRANSBAY EB -  BAY BRIDGE_Split the fare to links before and after Treasure Island 
+FARELINKS FARE= 71, L=7017- 6971 MODES=84 ONEWAY=Y ;TRANSBAY EB -  BAY BRIDGE_Split the fare to links before and after Treasure Island 
+FARELINKS FARE= 142, L=3650- 6381 MODES=37 ONEWAY=Y ;Line M WB
+FARELINKS FARE= 142, L=6383- 3642 MODES=37 ONEWAY=Y ;Line M EB
+
+
+; ------------------------- Modes 44 TRI-DELTA ------------------
+FARELINKS FARE=  34, L=20209 - 9204 MODES=44 ONEWAY=Y ;Route 200, 201, 300 (Add $0.50)
+FARELINKS FARE=  34, L=9946 - 9205 MODES=44 ONEWAY=Y ;Route 200, 201, 300 (Add $0.50)
+
+; ------------------------- Modes 91 SOLTRANS --------------------
+FARELINKS FARE=  220, L=11768- 11764 MODES=91 ONEWAY=Y ;FAIRFIELD/VALLEJO SB (add 3.25)
+FARELINKS FARE=  220, L=11765- 11769 MODES=91 ONEWAY=Y ;FAIRFIELD/VALLEJO NB (add 3.25)
+FARELINKS FARE= 220, L=9506- 9285 MODES=91 ONEWAY=Y ;VALLEJO/EL CERRITO BART SB - CARQUINEZ BRDG (add 3.25)
+FARELINKS FARE= 220, L=11637- 11642 MODES=91 ONEWAY=Y ;VALLEJO/EL CERRITO BART NB - CARQUINEZ BRDG (add 3.25)
+FARELINKS FARE= 345, L=2803- 2783 MODES=91 ONEWAY=Y ;VALLEJO/SF Ferry Terminal SB - Bay BRDG (add 5.10)
+FARELINKS FARE= 345, L=2784- 2802 MODES=91 ONEWAY=Y ;VALLEJO/SF Ferry Terminal NB - Bay BRDG (add 5.10)
+FARELINKS FARE= 220, L=11683- 2131 MODES=91 ONEWAY=Y ;LINE 78 - BENICIA BRDG SB (add 3.25)
+FARELINKS FARE= 220, L=10007- 10005 MODES=91 ONEWAY=Y ;LINE 78 - BENICIA BRDG NB (add 3.25)
+
+; ------------------------- Modes 52 & 92 FAIRFIELD TRANSIT ------------
+FARELINKS FARE=  203, L=11597- 11683 MODES=92 ONEWAY=Y ; Benicia/Pleasant Hill EB (add 3.00)
+FARELINKS FARE=  203, L=10007- 10005 MODES=92 ONEWAY=Y ; Benicia/Pleasant Hill WB (add 3.00)
+FARELINKS FARE=  203, L= 9506- 9285 MODES=92 ONEWAY=Y ; FAIRFIELD/EL CERRITO WB (add 3.00)
+FARELINKS FARE=  203, L= 11637- 11642 MODES=92 ONEWAY=Y ; FAIRFIELD/EL CERRITO EB (add 3.00)
+
+;; ------------------------- Modes 60, 93 NVT/VINE -------------------
+FARELINKS FARE= 152, L=9506- 9285 MODES=93 ONEWAY=Y ;VALLEJO/EL CERRITO BART SB - CARQUINEZ BRDG (add $2.25)
+FARELINKS FARE= 152, L=11637- 11642 MODES=93 ONEWAY=Y ;VALLEJO/EL CERRITO BART NB - CARQUINEZ BRDG (add $2.25)
+
+FARELINKS FARE=  95, L=11069- 11828 MODES=95 ONEWAY=Y ;Napa/Vallejo (add $1.40)
+FARELINKS FARE=  95, L=11828- 11069 MODES=95 ONEWAY=Y ;Napa/Vallejo (add $1.40)
+
+
+; ******************************** Farelinks.FAR ******************************
+;                                    RTP 2021
+;                             (assumes 2019 fares)
+
+; Hot fix 2025.03 by jennifer z
+; Modes 63 Sonoma and 87 GGT are from the RTP 2021 update
+; All other modes copied from the original base year farelinks.fare
+
+; ------------------------- Modes 63 SONOMA CO TRANSIT ----------
+FARELINKS FARE=  36, L=8486- 8488, MODES=63 ONEWAY=N ; Geyserville - Cloverdale  (add $0.60)
+FARELINKS FARE=  36, L=8476- 8495, 8459- 8461, MODES=63 ONEWAY=N ; Geyserville - Healdsburg (add $0.60)
+FARELINKS FARE=  36, L=8471- 8470, MODES=63 ONEWAY=N ; Healdsburg - Windsor (add $0.60)
+FARELINKS FARE=  36, L=8572- 8599, MODES=63 ONEWAY=N ; Windsor - Forestville (add $0.60)
+FARELINKS FARE=  36, L=8581- 8450, MODES=63 ONEWAY=N ; Forestville - Russian River (add $0.60)
+FARELINKS FARE=  36, L=8342- 8793, 8341- 8791, 8400- 8389, MODES=63 ONEWAY=N ; Windsor - Santa Rosa (add $0.60)
+FARELINKS FARE=  36, L=8429- 8566, 8567- 8444, MODES=63 ONEWAY=N ; Sebastopol - Santa Rosa (add $0.60)
+FARELINKS FARE=  36, L=8445- 8453, MODES=63 ONEWAY=N ; Sebastopol - Forestville (add $0.60)
+FARELINKS FARE=  36, L=8523- 10372, MODES=63 ONEWAY=N ; Sebastopol - Rohnert Park/Cotati (add $0.60)
+FARELINKS FARE=  36, L=8520- 8521, 8333- 8388, MODES=63 ONEWAY=N ; Santa Rosa - Rohnert Park/Cotati (add $0.60)
+FARELINKS FARE=  36, L=8274- 8578, MODES=63 ONEWAY=N ; Petaluma - Rohnert Park/Cotati (add $0.60)
+FARELINKS FARE=  36, L=8250- 8285, MODES=63 ONEWAY=N ; Petaluma - Lakeville (add $0.60)
+FARELINKS FARE=  36, L=8392- 8285, MODES=63 ONEWAY=N ; Sonoma - Lakeville (add $0.60)
+FARELINKS FARE=  36, L=8283- 8279, MODES=63 ONEWAY=N ; Sonoma - Novato (add $0.60)
+FARELINKS FARE=  36, L=8346- 8555, 8286- 8528, MODES=63 ONEWAY=N ; Sonoma - Glen Ellen (add $0.60)
+FARELINKS FARE=  36, L=8290- 8286, MODES=63 ONEWAY=N ; Glen Ellen - Kenwood (add $0.60)
+FARELINKS FARE=  36, L=8290- 8539, 8248- 8290, MODES=63 ONEWAY=N ; Santa Rosa - Kenwood (add $0.60)
+FARELINKS FARE=  36, L=9647- 9648, MODES=63 ONEWAY=Y ; Novato - San Rafael (add $0.60)
+FARELINKS FARE=  36, L=9624- 9625, MODES=63 ONEWAY=Y ; Novato - San Rafael (add $0.60)
+
+; ------------------------- Modes 87 GGT ---------------------------
+;
+; GGT is a fre zone system. The fares are hard to represent in TRNBUILD.
+; An average of the fares within Marin and within Sonoma was taken
+; The base fare is $7.00. Additional fares are added at the Marin/Sonoma county line
+;
+
+;*******************************************************************
+;Fare zone boundry 4/5 MARIN/SONOMA COUNTY LINE
+;*******************************************************************
+FARELINKS FARE=  182, L=8238- 8227 MODES=87 ONEWAY=Y ; North (add $3.00)
+FARELINKS FARE=  182, L=8203- 8202 MODES=87 ONEWAY=Y ; South (add $3.00)

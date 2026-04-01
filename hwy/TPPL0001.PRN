@@ -1,0 +1,201 @@
+Page 1  (VOYAGER PILOT) 
+
+------------------------
+PILOT (v.07/10/2023 [6.5.1 x64]) Tue Mar 31 13:36:55 2026
+
+Args: E:\GitHub\NetworkWrangler\_static\Cube\exportHwyfromPy.s
+Input:   E:\GitHub\NetworkWrangler\_static\Cube\exportHwyfromPy.s
+
+RUN PGM=NETWORK,0
+
+PILOT Stack Size = 42 bytes.
+................................................................................
+Page 2  (VOYAGER NETWORK) 
+
+--------------------------
+NETWORK (v.07/10/2023 [6.5.1 x64])  Tue Mar 31 13:36:56 2026
+
+
+NETI[1]="E:\GitHub\NetworkWrangler\scripts\BlueprintNetworks\net_2023_Baseline\hwy\freeflow.net"
+LINKO="E:\GitHub\NetworkWrangler\scripts\scratch\cubenet_validate_links.csv",FORMAT=SDF,INCLUDE=A,B,DISTANCE ,LANES,BRT
+NODEO="E:\GitHub\NetworkWrangler\scripts\scratch\cubenet_validate_nodes.csv",FORMAT=SDF,INCLUDE=N,X,Y  
+
+
+NETWORK Stack Size = 480 bytes.
+................................................................................
+
+
+
+
+freeflow.net   (VOYAGER):
+
+NET PGM=HWYNET (v.07/10/2023 [6.5.1 x64]) DATE=Tue Mar 31 13:36:42 2026
+ID= 
+PAR Zones=1475 Nodes=39030 Links=33953 NodeRecs=14192 
+NVR 6    N    X    Y    GGFARE    PROJ=019    PBA2050_RTP_ID=001
+LVR 86    A    B    DISTANCE    SPDCLASS    CAPCLASS    LANES    TSIN    GL
+    USE    OT    CAP    AT    FT    SIGCOR    TOS    AUX    YEAR    FFS    FFT
+    FT2000    ROUTENUM    HOT    TOLLCLASS    STATE    CITYID    CITYNAME=033
+    REGFREIGHT    BRT    TOLLEA_DA    TOLLEA_S2    TOLLEA_S3    TOLLEA_VSM
+    TOLLEA_SML    TOLLEA_MED    TOLLEA_LRG    TOLLAM_DA    TOLLAM_S2
+    TOLLAM_S3    TOLLAM_VSM    TOLLAM_SML    TOLLAM_MED    TOLLAM_LRG
+    TOLLMD_DA    TOLLMD_S2    TOLLMD_S3    TOLLMD_VSM    TOLLMD_SML
+    TOLLMD_MED    TOLLMD_LRG    TOLLPM_DA    TOLLPM_S2    TOLLPM_S3
+    TOLLPM_VSM    TOLLPM_SML    TOLLPM_MED    TOLLPM_LRG    TOLLEV_DA
+    TOLLEV_S2    TOLLEV_S3    TOLLEV_VSM    TOLLEV_SML    TOLLEV_MED
+    TOLLEV_LRG    ROUTEDIR=001    PROJ=102    AUTOOPC    SMTROPC    LRTROPC
+    BUSOPC    VOT    TRUCKVOT    SR2COSTSHARE    SR3COSTSHARE    TRKPCE
+    FIRSTVALUE    OWNEDAV_ZPV_FAC    TNC_ZPV_FACTOR    MEANS_BASED_TOL
+    TOLL_FLAT    AV_PCE    HOVXPEN    BRIDGE    PBA2050_RTP_ID=001
+    ACTION=003    _LANES    PROJECT=009
+
+
+
+Begin PROCESS PHASE NODEMERGE
+      14,192 records merged from NODEI[1]: freeflow.net
+      14,192 data base records.
+
+Variable   Obs<>0              Total           Ave         Min         Max           RMS  
+--------   ------              -----           ---         ---         ---           ---  
+N          14,192                 --            --           1      39,030            --
+X          14,192   8,136,924,412.2     573,345.86     454,817     660,744    573,875.19
+Y          14,192  59,278,616,311.07  4,176,903.63   4,086,022   4,301,302  4,177,068.1 
+PROJ           17                                   (CC_07000)  (US101_Wi)
+
+      Obs = 0:  GGFARE  PBA2050_RTP_ID
+Page 3  (VOYAGER NETWORK) 
+
+--------------------------
+_Variables with values:
+
+_ZONES            1,475      
+
+End   PROCESS PHASE NODEMERGE
+
+
+Begin PROCESS PHASE LINKMERGE
+      33,953 records merged from NETI[1]: freeflow.net
+      33,953 data base records.Page 4  (VOYAGER NETWORK) 
+
+--------------------------
+
+Variable          Obs<>0          Total       Ave       Min        Max       RMS  
+--------          ------          -----       ---       ---        ---       ---  
+A                 33,953             --        --      1     39,029           --
+B                 33,953             --        --      1     39,030           --
+DISTANCE          33,953      15,004.05      0.44      0.01      12.8       0.73
+SPDCLASS          33,953   1,264,740        37.25      4         62        38.98
+CAPCLASS          33,953   1,264,740        37.25      4         62        38.98
+LANES             33,907     106,095         3.13      1          7         3.95
+TSIN               8,862       8,862         1         1          1         1   
+GL                33,953     133,494         3.93      1         10         4.43
+USE               33,953      36,044         1.06      1          4         1.13
+OT                 8,865       7,413.27      0.84      0.02      15         1.28
+CAP               25,096  29,258,350     1,165.86    600      2,250     1,252.87
+AT                33,109     108,197         3.27      1          5         3.42
+FT                33,953     188,440         5.55      1          8         5.77
+SIGCOR               231         231         1         1          1         1   
+TOS                2,649       3,925         1.48      1          2         1.56
+AUX                  331         340         1.03      1          2         1.04
+YEAR                 360     725,960     2,016.56  2,010      2,035     2,016.56
+FFS               33,953   1,037,231        30.55     10         75        33.21
+FFT               33,950      29,669.49      0.87      0.02      19.37      1.34
+FT2000            33,948     180,915         5.33      1          7         5.58
+ROUTENUM           4,889     991,335       202.77      1        980       324.39
+HOT                   20          20         1         1          1         1   
+TOLLCLASS            358     567,310     1,584.66      1      2,830     1,893.37
+STATE              7,213       7,213         1         1          1         1   
+CITYID            33,953   3,951,257       116.37      1        191       125.74
+CITYNAME          33,953                           (Alameda )  (Yountvil)
+REGFREIGHT         2,456       2,456         1         1          1         1   
+BRT                  356         475         1.33      1          3         1.43
+TOLLEA_DA             16       5,704       356.5     280        472       359.89
+TOLLEA_S2             16       5,704       356.5     280        472       359.89
+TOLLEA_S3             16       5,704       356.5     280        472       359.89
+TOLLEA_VSM            16       8,000       500       350        675       506.44
+TOLLEA_SML            16       5,704       356.5     280        472       359.89
+TOLLEA_MED             8       7,501       937.63    420      1,416       991.2 
+TOLLEA_LRG             8      12,674     1,584.25    787      2,360     1,661.55
+TOLLAM_DA             49       6,845.07    139.7       1.62     472       218.23
+TOLLAM_S2             16       5,634       352.13    175        472       360.96
+TOLLAM_S3             16       4,549       284.31    175        472       301.95
+TOLLAM_VSM            49       9,236.66    188.5       2.43     675       294.09
+TOLLAM_SML            49       6,565.07    133.98      1.62     472       208.87
+TOLLAM_MED            41       8,362.07    203.95      1.62   1,416       439.65
+TOLLAM_LRG            41      13,535.07    330.12      1.62   2,360       735.03
+TOLLMD_DA             36       5,786.74    160.74      0.6      472       239.96
+TOLLMD_S2             16       5,704       356.5     280        472       359.89
+TOLLMD_S3             16       5,704       356.5     280        472       359.89
+TOLLMD_VSM            36       8,124.11    225.67      0.9      675       337.67
+TOLLMD_SML            36       5,786.74    160.74      0.6      472       239.96
+TOLLMD_MED            28       7,583.74    270.85      0.6    1,416       529.84
+TOLLMD_LRG            28      12,756.74    455.6       0.6    2,360       888.14
+TOLLPM_DA             49       6,381.02    130.22      0.3      472       216.1 
+TOLLPM_S2             16       5,634       352.13    175        472       360.96Page 5  (VOYAGER NETWORK) 
+
+--------------------------
+TOLLPM_S3             16       4,549       284.31    175        472       301.95
+TOLLPM_VSM            49       8,584.57    175.2       0.5      675       290.86
+TOLLPM_SML            49       6,101.02    124.51      0.3      472       206.64
+TOLLPM_MED            41       7,898.02    192.63      0.3    1,416       438.39
+TOLLPM_LRG            41      13,071.02    318.81      0.3    2,360       734.28
+TOLLEV_DA             16       5,704       356.5     280        472       359.89
+TOLLEV_S2             16       5,704       356.5     280        472       359.89
+TOLLEV_S3             16       5,704       356.5     280        472       359.89
+TOLLEV_VSM            16       8,000       500       350        675       506.44
+TOLLEV_SML            16       5,704       356.5     280        472       359.89
+TOLLEV_MED             8       7,501       937.63    420      1,416       991.2 
+TOLLEV_LRG             8      12,674     1,584.25    787      2,360     1,661.55
+ROUTEDIR           4,864                           (0       )  (W       )
+PROJ               2,205                           (AC_Trans)  (VAR17002)
+AUTOOPC           33,787     463,895.51     13.73     13.73      13.73     13.73
+SMTROPC           33,787     927,791.02     27.46     27.46      27.46     27.46
+LRTROPC           33,787   1,391,686.53     41.19     41.19      41.19     41.19
+BUSOPC            33,787   1,391,686.53     41.19     41.19      41.19     41.19
+VOT               33,787     506,805        15        15         15        15   
+TRUCKVOT          33,787   1,013,610        30        30         30        30   
+SR2COSTSHARE      33,787      59,127.25      1.75      1.75       1.75      1.75
+SR3COSTSHARE      33,787      84,467.5       2.5       2.5        2.5       2.5 
+TRKPCE            33,787      67,574         2         2          2         2   
+FIRSTVALUE        33,787   1,047,397        31        31         31        31   
+MEANS_BASED_TOL   33,787      33,787         1         1          1         1   
+TOLL_FLAT             16          16         1         1          1         1   
+AV_PCE            33,787      33,787         1         1          1         1   
+BRIDGE                95         403         4.24      1          8         4.71
+ACTION               132                           (ADD     )  (ADD     )
+_LANES                37          63         1.7       1          3         1.88
+PROJECT               28                           (SOL07002)  (SON07000)
+
+      Obs = 0:  OWNEDAV_ZPV_FAC  TNC_ZPV_FACTOR  HOVXPEN  PBA2050_RTP_ID
+
+_Variables with values:
+
+_ZONES            1,475      
+
+End   PROCESS PHASE LINKMERGE
+
+
+Begin PROCESS PHASE NET2ASC
+
+Variables written to E:\GitHub\NetworkWrangler\scripts\scratch\cubenet_validate_links.csv:
+     A                   5.0
+     B                   5.0
+     DISTANCE            8.5
+     LANES               1.0
+     BRT                 1.0
+ Page 6  (VOYAGER NETWORK) 
+
+--------------------------
+
+Variables written to E:\GitHub\NetworkWrangler\scripts\scratch\cubenet_validate_nodes.csv:
+     N                   5.0
+     X                  12.5
+     Y                  13.5
+ 
+End   PROCESS PHASE NET2ASC
+
+NETWORK  ReturnCode = 0  Elapsed Time = 00:00:01
+################################################################################
+
+
+VOYAGER  ReturnCode = 0  Elapsed Time = 00:00:02

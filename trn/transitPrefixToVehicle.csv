@@ -1,0 +1,66 @@
+Prefix,System,VehicleType
+100_,East Bay Ferries,Ferry
+101_,Golden Gate Ferry - Larkspur,Ferry GGT
+102_,Golden Gate Ferry - Sausalito,Ferry GGT
+103_,Tiburon Ferry,Ferry GGT
+104_,Vallejo Baylink Ferry,Ferry Vallejo
+105_,South City Ferry,Ferry
+10_,Berkeley,Motor Standard Bus
+110_,SF Muni Metro,LRV2
+111_,VTA LRT,VTA LRT2
+115_,SR85 Rail,SR85 LRV
+11_,Broadway Shuttle,Motor Small Bus
+120_,BART,8 Car BART
+121_,Oakland Airport Connector,OAC
+12_,Emery Go Round,Motor Small Bus
+130_,Caltrain,Caltrain
+131_,Amtrak Capitol Corridor,Unknown Train
+132_,Amtrak San Joaquin,Unknown Train
+133_,ACE,Unknown Train
+134_,Dumbarton Rail,Dumbarton Rail
+135_,SMART,SMART 2 car
+137_,High Speed Rail,HSR
+13_,Stanford Shuttle,Motor Small Bus
+14_,Caltrain Shuttle,Motor Small Bus
+15_,VTA Shuttle,Motor Small Bus
+16_,Palo Alto & Menlo Park Shuttles,Motor Small Bus
+17_,Wheels ACE Shuttles,Motor Small Bus
+18_,Amtrak Shuttles,Motor Small Bus
+19_,San Leandro Links,Motor Small Bus
+20_,SF Muni Cable Car,Cable Car
+21_,SF Muni Local,Motor Standard Bus
+24_,SamTrans Local,Motor Standard Bus
+27_,VTA Community Bus,Motor Standard Bus
+28_,VTA Local,Motor Standard Bus
+30_,AC Transit Local,Motor Standard Bus
+33_,Wheels Local,Motor Standard Bus
+38_,Union City Transit,Motor Standard Bus
+40_,AirBART,Motor Standard Bus
+42_,County Connection Local,Motor Standard Bus
+44_,Tri Delta Transit,Motor Standard Bus
+46_,WestCAT Local,Motor Standard Bus
+49_,Vallejo Transit,Motor Standard Bus
+52_,Fairfield and Suisun Transit Local,Motor Standard Bus
+55_,American Canyon,Motor Standard Bus
+56_,Vallejo Transit,Motor Standard Bus
+58_,Benicia Breeze,Motor Standard Bus
+60_,VINE Local,Motor Standard Bus
+63_,Sonoma County Transit,Motor Standard Bus
+66_,Santa Rosa City Bus,Motor Standard Bus
+68_,Petaluma Transit,Motor Standard Bus
+70_,Golden Gate Transit Local,Motor Standard Bus
+80_,SamTrans Express,Motor Standard Bus
+81_,VTA Express,Motor Standard Bus
+82_,Dumbarton Express,Motor Standard Bus
+83_,AC Transit Transbay,Motor Standard Bus
+84_,AC Transit Transbay,Motor Standard Bus
+86_,County Connection Express,Motor Standard Bus
+87_,Golden Gate Transit Express,Motor Standard Bus
+88_,Golden Gate Transit Express,Motor Standard Bus
+90_,WestCAT Express,Motor Standard Bus
+91_,Vallejo Transit Express,Motor Standard Bus
+92_,Fairfield and Suisun Transit Express,Motor Standard Bus
+93_,VINE Express,Motor Standard Bus
+94_,SMART Temporary Express,Motor Standard Bus
+95_,VINE Express,Motor Standard Bus
+Prefix,System,VehicleType
